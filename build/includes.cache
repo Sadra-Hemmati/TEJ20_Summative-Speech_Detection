@@ -1,0 +1,37 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\variants\\UNOWIFIR4"
+  },
+  {
+    "Sourcefile": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+    "Include": "LiquidCrystal_I2C.h",
+    "Includepath": "C:\\Users\\sadra\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C"
+  },
+  {
+    "Sourcefile": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\libraries\\Wire"
+  },
+  {
+    "Sourcefile": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\sadra\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C\\LiquidCrystal_I2C.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\libraries\\Wire\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

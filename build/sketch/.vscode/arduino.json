@@ -1,0 +1,18 @@
+#line 1 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\.vscode\\arduino.json"
+{
+  "port": "COM5",
+  "configuration": "",
+  "output": "build",
+  "board": "arduino:renesas_uno:unor4wifi",
+  "programmer": "",
+  "useProgrammer": false,
+  "configurationRequired": false,
+  "monitorPortSettings": {
+    "port": "COM5",
+    "baudRate": 9600,
+    "lineEnding": "\r\n",
+    "dataBits": 8,
+    "parity": "none",
+    "stopBits": "one"
+  }
+}

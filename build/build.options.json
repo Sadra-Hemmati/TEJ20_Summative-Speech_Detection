@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "..\\..\\..,..\\..\\..",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "build.warn_data_percentage=75",
+  "fqbn": "arduino:renesas_uno:unor4wifi",
+  "hardwareFolders": "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\sadra\\Documents\\Arduino\\libraries",
+  "sketchLocation": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection"
+}

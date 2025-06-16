@@ -1,0 +1,16 @@
+C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\core\tinyusb\common\tusb_fifo.c.o: \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino\tinyusb\common\tusb_fifo.c \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/osal/osal.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_common.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/tusb_option.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_compiler.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\variants\UNOWIFIR4/tusb_config.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_mcu.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_compiler.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_verify.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_types.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_debug.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_timeout.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/osal/osal_none.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_fifo.h \
+ C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino\tinyusb\common\tusb_fifo.h

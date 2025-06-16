@@ -1,14 +1,14 @@
 {
-  "port": "",
+  "port": "COM5",
   "configuration": "",
   "output": "build",
-  "board": "",
+  "board": "arduino:renesas_uno:unor4wifi",
   "programmer": "",
   "useProgrammer": false,
   "configurationRequired": false,
   "monitorPortSettings": {
-    "port": "",
-    "baudRate": 115200,
+    "port": "COM5",
+    "baudRate": 9600,
     "lineEnding": "\r\n",
     "dataBits": 8,
     "parity": "none",
