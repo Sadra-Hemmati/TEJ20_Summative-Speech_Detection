@@ -120,7 +120,7 @@ void loop() {
 // Returns a pointer to the start of the buffer
 // **WILL CAUSE MEMORY LEAKS IF THE MEMORY IS NOT FREED AFTER USE**
 float* recordAudioFrame() {
-    float float_audio_buffer[SAMPLES_PER_FRAME];
+    float* float_audio_buffer = new float[SAMPLES_PER_FRAME];
     uint32_t sample_interval_us = 1000000 / SAMPLE_RATE;
 
     float alpha = 0.2; // Low pass filter constant
