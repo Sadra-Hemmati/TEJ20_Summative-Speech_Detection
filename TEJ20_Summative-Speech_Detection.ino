@@ -123,7 +123,10 @@ float* recordAudioFrame() {
     float* float_audio_buffer = new float[SAMPLES_PER_FRAME];
     uint32_t sample_interval_us = 1000000 / SAMPLE_RATE;
 
-    float alpha = 0.2; // Low pass filter constant
+    float dt = 1/SAMPLE_RATE;
+    float fc = 400; // cutoff frequency
+    float alpha = (2*PI*fc*dt) / (2*PI*fc*dt + 1); // Low pass filter constant
+
     float_audio_buffer[0] = analogRead(sample_interval_us);
     for (int i = 1; i < SAMPLES_PER_FRAME; ++i) {
         delayMicroseconds(sample_interval_us);
