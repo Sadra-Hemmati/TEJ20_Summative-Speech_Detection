@@ -3,7 +3,7 @@
   "configuration": "",
   "output": "build",
   "board": "arduino:renesas_uno:unor4wifi",
-  "programmer": "",
+  "programmer": "ARM CMSIS-DAP compatible",
   "useProgrammer": false,
   "configurationRequired": false,
   "monitorPortSettings": {

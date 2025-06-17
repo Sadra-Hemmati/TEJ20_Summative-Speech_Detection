@@ -7,6 +7,7 @@
         "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\variants\\UNOWIFIR4/**",
         "C:\\Users\\sadra\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C/**",
         "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\libraries\\Wire/**",
+        "C:\\Users\\sadra\\Documents\\Arduino\\libraries\\TEJ20_Keyword_Spotting_inferencing\\src/**",
         "C:\\Users\\sadra\\Documents\\Arduino\\libraries/**",
         "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection/**"
       ],
@@ -56,6 +57,7 @@
         "-IC:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\variants\\UNOWIFIR4",
         "-IC:\\Users\\sadra\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C",
         "-IC:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\libraries\\Wire",
+        "-IC:\\Users\\sadra\\Documents\\Arduino\\libraries\\TEJ20_Keyword_Spotting_inferencing\\src",
         "-iprefixC:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1",
         "@C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\variants\\UNOWIFIR4/includes.txt",
         "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
