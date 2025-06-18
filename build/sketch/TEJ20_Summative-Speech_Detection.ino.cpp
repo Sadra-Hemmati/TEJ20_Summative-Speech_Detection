@@ -21,15 +21,23 @@ String command = "none";
 #define SAMPLE_RATE 6000
 #define SAMPLES_PER_FRAME (EI_CLASSIFIER_RAW_SAMPLE_COUNT)
 
-#line 22 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
+int8_t audio_buffer[SAMPLES_PER_FRAME];
+
+extern "C" char* sbrk(int incr);
+#line 25 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
+int freeMemory();
+#line 30 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
 void setup();
-#line 35 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
+#line 43 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
 void loop();
-#line 128 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
-int16_t* recordAudioFrame();
-#line 147 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
-int8_t* recordAudioFrame_int8();
-#line 22 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
+#line 182 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
+void recordAudioFrame();
+#line 25 "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\TEJ20_Summative-Speech_Detection.ino"
+int freeMemory() {
+  char top;
+  return &top - reinterpret_cast<char*>(sbrk(0));
+}
+
 void setup() {
     lcd.init();
     lcd.backlight();
@@ -55,21 +63,27 @@ void loop() {
         return;
     }
     
+    Serial.println("Start: " + String(freeMemory()));
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Recording...");
 
     // int16_t* buffer = recordAudioFrame();
-    int8_t* buffer = recordAudioFrame_int8();
+    // int8_t* buffer = recordAudioFrame_int8();
+    recordAudioFrame();
+
+    Serial.println("After recording: " + String(freeMemory()));
 
     // Wrap into signal structure for the classifier
     signal_t signal;
     // int err = numpy::signal_from_buffer_int16_t(buffer, SAMPLES_PER_FRAME, &signal);
-    int err = numpy::signal_from_buffer_int8_t(buffer, SAMPLES_PER_FRAME, &signal);
+    int err = numpy::signal_from_buffer_int8_t(audio_buffer, SAMPLES_PER_FRAME, &signal);
     if (err != 0) {
         Serial.println("Failed to create signal from buffer");
         return;
     }
+
+    Serial.println("After signal: " + String(freeMemory()));
 
     lcd.clear();
     lcd.setCursor(0, 0);
@@ -78,7 +92,7 @@ void loop() {
     ei_impulse_result_t result = {0};
 
     // Run inference
-    EI_IMPULSE_ERROR res = run_classifier(&signal, &result, true);
+    EI_IMPULSE_ERROR res = run_classifier(&signal, &result, false);
     if (res != EI_IMPULSE_OK) {
         Serial.println("Classification failed");
         return;
@@ -86,6 +100,8 @@ void loop() {
     else {
         Serial.println("Classification complete");
     }
+
+    Serial.println("After Classification: " + String(freeMemory()));
 
     // Debug output
     for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
@@ -129,41 +145,59 @@ void loop() {
         }
     }
 
-    // Free memory to prevent a leak
-    delete[] buffer;
+    // // Free memory to prevent a leak
+    // delete[] buffer;
 }
 
 // Blocks for one second and records a one second audio frame
 // Returns a pointer to the start of the buffer
 // **WILL CAUSE MEMORY LEAKS IF THE MEMORY IS NOT FREED AFTER USE**
-int16_t* recordAudioFrame() {
-    int16_t* audio_buffer = new int16_t[SAMPLES_PER_FRAME];
+// int16_t* recordAudioFrame_int16() {
+//     int16_t* audio_buffer = new int16_t[SAMPLES_PER_FRAME];
+//     uint32_t sample_interval_us = 1000000 / SAMPLE_RATE;
+
+//     float dt = 1/SAMPLE_RATE;
+//     float fc = 4000; // cutoff frequency
+//     float alpha = (2*PI*fc*dt) / (2*PI*fc*dt + 1); // Low pass filter constant
+
+//     audio_buffer[0] = analogRead(sample_interval_us);
+//     for (size_t i = 1; i < SAMPLES_PER_FRAME; i++) {
+//         delayMicroseconds(sample_interval_us);
+//         int raw = analogRead(MIC_PIN);  // 0 - 1023
+//         audio_buffer[i] = int16_t(raw * alpha + audio_buffer[i-1] * (1 - alpha)); // Low pass filter to reduce noise
+//         audio_buffer[i] = (audio_buffer[i] - 512);  // Center on 0
+//     }
+//     Serial.println("Done sampling");
+//     return audio_buffer;
+// }
+
+// int8_t* recordAudioFrame_int8() {
+//     int8_t* audio_buffer = new int8_t[SAMPLES_PER_FRAME];
+//     uint32_t sample_interval_us = 1000000 / SAMPLE_RATE;
+
+//     float dt = 1/SAMPLE_RATE;
+//     float fc = 4000; // cutoff frequency
+//     float alpha = (2*PI*fc*dt) / (2*PI*fc*dt + 1); // Low pass filter constant
+
+//     audio_buffer[0] = analogRead(sample_interval_us);
+//     for (size_t i = 1; i < SAMPLES_PER_FRAME; ++i) {
+//         delayMicroseconds(sample_interval_us);
+//         int raw = analogRead(MIC_PIN);  // 0 - 1023
+//         // Low pass filter to reduce noise, then map to an 8 bit int centered on 0
+//         audio_buffer[i] = int8_t(map(raw * alpha + audio_buffer[i-1] * (1 - alpha), 0, 1023, -128, 127));
+//     }
+//     Serial.println("Done sampling");
+//     return audio_buffer;
+// }
+
+void recordAudioFrame() {
     uint32_t sample_interval_us = 1000000 / SAMPLE_RATE;
 
     float dt = 1/SAMPLE_RATE;
     float fc = 4000; // cutoff frequency
     float alpha = (2*PI*fc*dt) / (2*PI*fc*dt + 1); // Low pass filter constant
 
-    audio_buffer[0] = analogRead(sample_interval_us);
-    for (size_t i = 1; i < SAMPLES_PER_FRAME; ++i) {
-        delayMicroseconds(sample_interval_us);
-        int raw = analogRead(MIC_PIN);  // 0 - 1023
-        audio_buffer[i] = int16_t(raw * alpha + audio_buffer[i-1] * (1 - alpha)); // Low pass filter to reduce noise
-        audio_buffer[i] = (audio_buffer[i] - 512);  // Center on 0
-    }
-    Serial.println("Done sampling");
-    return audio_buffer;
-}
-
-int8_t* recordAudioFrame_int8() {
-    int8_t* audio_buffer = new int8_t[SAMPLES_PER_FRAME];
-    uint32_t sample_interval_us = 1000000 / SAMPLE_RATE;
-
-    float dt = 1/SAMPLE_RATE;
-    float fc = 4000; // cutoff frequency
-    float alpha = (2*PI*fc*dt) / (2*PI*fc*dt + 1); // Low pass filter constant
-
-    audio_buffer[0] = analogRead(sample_interval_us);
+    audio_buffer[0] = analogRead(MIC_PIN);
     for (size_t i = 1; i < SAMPLES_PER_FRAME; ++i) {
         delayMicroseconds(sample_interval_us);
         int raw = analogRead(MIC_PIN);  // 0 - 1023
@@ -171,5 +205,4 @@ int8_t* recordAudioFrame_int8() {
         audio_buffer[i] = int8_t(map(raw * alpha + audio_buffer[i-1] * (1 - alpha), 0, 1023, -128, 127));
     }
     Serial.println("Done sampling");
-    return audio_buffer;
 }
