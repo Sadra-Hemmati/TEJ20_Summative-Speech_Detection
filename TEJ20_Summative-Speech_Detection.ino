@@ -65,9 +65,9 @@ void loop() {
     }
     
     //stop the fans from adding noise
-    digitalWrite(DC_ENABLE, LOW);
-    digitalWrite(DC_LEFT, LOW);
-    digitalWrite(DC_RIGHT, LOW);
+    digitalWrite(DC_ENABLE, HIGH);
+    digitalWrite(DC_LEFT, HIGH);
+    digitalWrite(DC_RIGHT, HIGH);
     delay(100);
 
     Serial.println("Start: " + String(freeMemory()));
@@ -128,17 +128,20 @@ void loop() {
     float max_val = 0;
     String new_command;
     for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
-        if (result.classification[ix].value > max_val) {
+        //Exclude "noise" and "unknown"
+        if (result.classification[ix].value > max_val && !(ix == 1 || ix == 4)) {
             max_val = result.classification[ix].value;
             new_command = result.classification[ix].label;
         }
     }
 
     //if a valid command was received, set it as the command
-    if (new_command == "left" || new_command == "right" || new_command == "stop") {
+    float min_certainty = 0.25;
+    if (max_val >= min_certainty && (new_command == "left" || new_command == "right" || new_command == "stop")) {
         command = new_command;
     }
 
+    //Execute commands if a keyword is detected, if the command was "stop", then the motor is already off
     if (command == "left"){
         analogWrite(DC_ENABLE, 200);
         digitalWrite(DC_LEFT, HIGH);
