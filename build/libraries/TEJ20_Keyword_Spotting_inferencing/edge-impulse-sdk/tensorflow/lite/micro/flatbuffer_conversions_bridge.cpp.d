@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\micro\flatbuffer_conversions_bridge.cpp.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\micro\flatbuffer_conversions_bridge.cpp.o: \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src\edge-impulse-sdk\tensorflow\lite\micro\flatbuffer_conversions_bridge.cpp \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src/edge-impulse-sdk/tensorflow/lite/micro/flatbuffer_conversions_bridge.h \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src/edge-impulse-sdk/tensorflow/lite/c/c_api_types.h \

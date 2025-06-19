@@ -9,7 +9,7 @@
         "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\libraries\\Wire/**",
         "C:\\Users\\sadra\\Documents\\Arduino\\libraries\\TEJ20_Keyword_Spotting_inferencing\\src/**",
         "C:\\Users\\sadra\\Documents\\Arduino\\libraries/**",
-        "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection/**"
+        "C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative/**"
       ],
       "forcedInclude": [
         "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\cores\\arduino\\Arduino.h"
@@ -41,7 +41,7 @@
         "-fmessage-length=0",
         "-fno-builtin",
         "-DARDUINO=10607",
-        "-DPROJECT_NAME=\"C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build/TEJ20_Summative-Speech_Detection.ino\"",
+        "-DPROJECT_NAME=\"C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build/Sadra-TEJ20_Summative.ino\"",
         "-DARDUINO_UNOWIFIR4",
         "-DARDUINO_ARCH_RENESAS_UNO",
         "-DARDUINO_ARCH_RENESAS",
@@ -60,9 +60,9 @@
         "-IC:\\Users\\sadra\\Documents\\Arduino\\libraries\\TEJ20_Keyword_Spotting_inferencing\\src",
         "-iprefixC:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1",
         "@C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\variants\\UNOWIFIR4/includes.txt",
-        "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+        "C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build\\sketch\\Sadra-TEJ20_Summative.ino.cpp",
         "-o",
-        "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp.o"
+        "C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build\\sketch\\Sadra-TEJ20_Summative.ino.cpp.o"
       ],
       "defines": [
         "F_CPU=48000000",
@@ -70,14 +70,14 @@
         "BACKTRACE_SUPPORT",
         "ARDUINO_UNOR4_WIFI",
         "ARDUINO=10607",
-        "PROJECT_NAME=\"C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build/TEJ20_Summative-Speech_Detection.ino\"",
+        "PROJECT_NAME=\"C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build/Sadra-TEJ20_Summative.ino\"",
         "ARDUINO_UNOWIFIR4",
         "ARDUINO_ARCH_RENESAS_UNO",
         "ARDUINO_ARCH_RENESAS",
         "ARDUINO_FSP",
         "_XOPEN_SOURCE=700",
         "CFG_TUSB_MCU=OPT_MCU_RAXXX",
-        "PROJECT_NAME=\\\"C:\\\\Users\\\\sadra\\\\Desktop\\\\TEJ20_Summative-Speech_Detection\\\\build/TEJ20_Summative-Speech_Detection.ino\\\"\"",
+        "PROJECT_NAME=\\\"C:\\\\Users\\\\sadra\\\\Desktop\\\\Sadra-TEJ20_Summative\\\\build/Sadra-TEJ20_Summative.ino\\\"\"",
         "USBCON"
       ],
       "cStandard": "c17",

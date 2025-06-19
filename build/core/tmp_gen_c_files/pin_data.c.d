@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\core\tmp_gen_c_files\pin_data.c.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\core\tmp_gen_c_files\pin_data.c.o: \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\variants\UNOWIFIR4\tmp_gen_c_files\pin_data.c \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1/variants/UNOWIFIR4/includes/ra/fsp/inc/api/bsp_api.h \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1/variants/UNOWIFIR4/includes/ra/fsp/inc/fsp_common_api.h \

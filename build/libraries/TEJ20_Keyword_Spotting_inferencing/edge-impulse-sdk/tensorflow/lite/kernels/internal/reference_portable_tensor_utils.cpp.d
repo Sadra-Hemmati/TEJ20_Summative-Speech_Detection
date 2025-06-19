@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\kernels\internal\reference_portable_tensor_utils.cpp.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\kernels\internal\reference_portable_tensor_utils.cpp.o: \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src\edge-impulse-sdk\tensorflow\lite\kernels\internal\reference_portable_tensor_utils.cpp \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src/edge-impulse-sdk/third_party/gemmlowp/fixedpoint/fixedpoint.h \
  c:\users\sadra\documents\arduino\libraries\tej20_keyword_spotting_inferencing\src\edge-impulse-sdk\third_party\gemmlowp\internal\detect_platform.h \

@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\core\tinyusb\device\usbd_control.c.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\core\tinyusb\device\usbd_control.c.o: \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino\tinyusb\device\usbd_control.c \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/tusb_option.h \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/tinyusb/common/tusb_compiler.h \

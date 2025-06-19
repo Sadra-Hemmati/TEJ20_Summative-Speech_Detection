@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\micro\kernels\topk_v2.cpp.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\micro\kernels\topk_v2.cpp.o: \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src\edge-impulse-sdk\tensorflow\lite\micro\kernels\topk_v2.cpp \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src/edge-impulse-sdk/tensorflow/lite/kernels/kernel_util.h \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src/edge-impulse-sdk/tensorflow/lite/core/c/builtin_op_data.h \

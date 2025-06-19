@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\micro\kernels\unidirectional_sequence_lstm.cpp.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\libraries\TEJ20_Keyword_Spotting_inferencing\edge-impulse-sdk\tensorflow\lite\micro\kernels\unidirectional_sequence_lstm.cpp.o: \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src\edge-impulse-sdk\tensorflow\lite\micro\kernels\unidirectional_sequence_lstm.cpp \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src/edge-impulse-sdk/tensorflow/lite/kernels/internal/quantization_util.h \
  C:\Users\sadra\Documents\Arduino\libraries\TEJ20_Keyword_Spotting_inferencing\src/edge-impulse-sdk/tensorflow/lite/kernels/internal/compatibility.h \

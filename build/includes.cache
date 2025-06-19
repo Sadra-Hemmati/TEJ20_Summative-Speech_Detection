@@ -10,22 +10,22 @@
     "Includepath": "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\variants\\UNOWIFIR4"
   },
   {
-    "Sourcefile": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+    "Sourcefile": "C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build\\sketch\\Sadra-TEJ20_Summative.ino.cpp",
     "Include": "LiquidCrystal_I2C.h",
     "Includepath": "C:\\Users\\sadra\\Documents\\Arduino\\libraries\\LiquidCrystal_I2C"
   },
   {
-    "Sourcefile": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+    "Sourcefile": "C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build\\sketch\\Sadra-TEJ20_Summative.ino.cpp",
     "Include": "Wire.h",
     "Includepath": "C:\\Users\\sadra\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\renesas_uno\\1.4.1\\libraries\\Wire"
   },
   {
-    "Sourcefile": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+    "Sourcefile": "C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build\\sketch\\Sadra-TEJ20_Summative.ino.cpp",
     "Include": "TEJ20_Keyword_Spotting_inferencing.h",
     "Includepath": "C:\\Users\\sadra\\Documents\\Arduino\\libraries\\TEJ20_Keyword_Spotting_inferencing\\src"
   },
   {
-    "Sourcefile": "C:\\Users\\sadra\\Desktop\\TEJ20_Summative-Speech_Detection\\build\\sketch\\TEJ20_Summative-Speech_Detection.ino.cpp",
+    "Sourcefile": "C:\\Users\\sadra\\Desktop\\Sadra-TEJ20_Summative\\build\\sketch\\Sadra-TEJ20_Summative.ino.cpp",
     "Include": "",
     "Includepath": null
   },

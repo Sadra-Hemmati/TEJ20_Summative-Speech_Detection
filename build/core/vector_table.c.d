@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\core\vector_table.c.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\core\vector_table.c.o: \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino\vector_table.c \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1/variants/UNOWIFIR4/includes/ra/fsp/inc/api/bsp_api.h \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1/variants/UNOWIFIR4/includes/ra/fsp/inc/fsp_common_api.h \

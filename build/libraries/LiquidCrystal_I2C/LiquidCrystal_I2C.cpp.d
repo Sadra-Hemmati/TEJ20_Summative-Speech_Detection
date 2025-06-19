@@ -1,4 +1,4 @@
-C:\Users\sadra\Desktop\TEJ20_Summative-Speech_Detection\build\libraries\LiquidCrystal_I2C\LiquidCrystal_I2C.cpp.o: \
+C:\Users\sadra\Desktop\Sadra-TEJ20_Summative\build\libraries\LiquidCrystal_I2C\LiquidCrystal_I2C.cpp.o: \
  C:\Users\sadra\Documents\Arduino\libraries\LiquidCrystal_I2C\LiquidCrystal_I2C.cpp \
  C:\Users\sadra\Documents\Arduino\libraries\LiquidCrystal_I2C\LiquidCrystal_I2C.h \
  C:\Users\sadra\AppData\Local\Arduino15\packages\arduino\hardware\renesas_uno\1.4.1\cores\arduino/api/deprecated/Print.h \
